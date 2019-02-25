@@ -1,5 +1,7 @@
 from flask import Flask
 import os
+import sys
+sys.path.insert(0, '/dependencies')
 
 app = Flask(__name__)
 

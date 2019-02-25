@@ -8,6 +8,7 @@ Dockerfile
 README.md
 env.*
 devops
+requirements.txt
 
 # To prevent storing dev/temporary container data
 tmp
