@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<h1>Welcome to docker! "+os.environ["number"]+"</h1>", 200
+    return "<h1>Welcome to docker! My first Image!!!!</h1>", 200
 
 @app.route("/_check")
 def check():
