@@ -1,8 +1,6 @@
 FROM ubuntu:latest
 
-COPY . .
-RUN sudo apt update \
-    sudo apt install nginx
+RUN apt update -y && apt install nginx -y
 
-CMD ["sudo systemctl start nginx"]
+CMD ["nginx", "-g", "daemon off;"] 
 
