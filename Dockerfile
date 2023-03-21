@@ -1,7 +1,8 @@
-FROM python:3.6.8-alpine3.8
+FROM ubuntu:latest
 
 COPY . .
-RUN pip3 install -r requirements.txt
+RUN sudo apt update \
+    sudo apt install nginx
 
-CMD ["python","app.py"]
+CMD ["sudo systemctl start nginx"]
 
